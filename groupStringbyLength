@@ -1,0 +1,11 @@
+import java.util.*;
+import java.util.stream.*;
+//group string by length
+class Main {
+    public static void main(String[] args) {
+       List<String> words = Arrays.asList("a","bb","ccc","dd","eee","f");
+        System.out.println(
+        words.stream().collect(Collectors.groupingBy(String::length))    
+        );
+    }
+}
